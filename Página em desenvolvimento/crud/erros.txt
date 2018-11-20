@@ -1,0 +1,4 @@
+- Usar o Xampp;
+
+- erro do campo CPF: todos os usuários estão com o mesmo CPF - Não consigo arrumar isso nem usando update
+

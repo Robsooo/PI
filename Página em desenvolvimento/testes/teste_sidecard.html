@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Teste com Sidecard</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<style>
+		body {
+			display: flex;
+			width: 100vw;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 0.4vh solid black;
+			width: 100%;
+			height: 100%;
+		}
+
+		span {
+			font-size: 3vmin;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<p class="texto">
+			<span>Ecologia</span> é uma área da <span>biologia</span> aaaaaaaaaaa aaaaaaaaaaaaaa
+			aaaaaaa aaaaaaaaaa aaaaaa aaaaaaaa aaaaaaaa aaaaaaaaa aaaaaaaaaa aaaaaaaa aaaaaaaa
+		</p>
+
+		<!-- A div .conceito suporta até 199 caracteres antes de criar a barra de rolagem 
+			aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+			aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+			aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+		-->
+
+		<div class="sidecard">
+			<div class="navbar">
+				<div class="top-sidecard"></div>
+				<div class="close-sidecard">×</div>
+			</div>
+			
+			<p class="conceito">
+				É a ciência que estuda as relações dos seres vivos entre si ou com o meio 
+				orgânico ou inorgânico no qual vivem.
+			</p>
+		</div>
+
+		<div class="sidecard">
+			<div class="navbar">
+				<div class="top-sidecard"></div>
+				<div class="close-sidecard">×</div>
+			</div>
+			
+			<p class="conceito">
+				É uma área científica que estuda a vida.
+			</p>
+		</div>
+
+	</div>
+
+	<script src="../js/sidecard.js"></script>
+</body>
+
+</html>

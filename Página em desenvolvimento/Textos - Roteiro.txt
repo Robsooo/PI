@@ -1,0 +1,29 @@
+INTRODUÇÃO:
+
+
+
+
+
+
+DINÂMICA DE POPULAÇÕES & CRESCIMENTO POPULACIONAL:
+
+
+	O crescimento populacional faz parte do estudo de dinâmica de populações, em que é realizado uma análise de uma população em um ecossistema levando em conta a quantidade de indivíduos dessa população sobre o tempo.
+
+	Para representar graficamente o crescimento da população no ambiente, são usadas as equações de crescimento exponencial, ou crescimento em "J", e de crescimento logístico, ou crescimento em "S".
+
+	Na célula ao lado( mostra exemplo da animação da divisão celular), ao clicarmos nela, ela começará a se mover e a se reproduzir, ao mesmo tempo que as mais velhas irão morrer. Chegará um momento da animação que a mesma congelará, demonstrando que o ambiente chegou à sua capacidade de suporte limite, ou seja, o ambiente chegará ao seu limite para suportar a população.
+
+
+
+INTERAÇÕES ECOLÓGICAS:
+
+
+Os indivíduos dentro de um ecossistema vivem interagindo entre si através de um sistema chamado consumidor-recurso, 
+
+
+
+CONCEITOS:
+Ecologia - É a área da Biologia que estuda a interação dos seres vivos entre si e entre o meio ambiente.
+
+Ecossitema - É um sistema que abrange seres vivos e o ambiente, mostrando suas interações relações.
