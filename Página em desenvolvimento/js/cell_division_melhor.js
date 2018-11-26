@@ -3,42 +3,52 @@ var cells = []
 var cytoplasm = []
 let directionX
 let directionY
-var i = 0
 var click = 0
 
 function setup() {
     let canvas = createCanvas(300,300)
-    canvas.elt.style.width = "85%"
-    canvas.elt.style.height = "85%"
-    document.querySelector("div.animation").appendChild(canvas.elt)       
-    
-    frameRate(30)
+    canvas.elt.style.width = "90%"
+    canvas.elt.style.height = "90%"
+    document.querySelector("div.animation").appendChild(canvas.elt)     
     
     cells[0] = new Cell(width/2, height/2, 30, 0.8, 1000, 1000)
     cells[0].createCell()
-
+    
+    frameRate(60)
 }
 
 function draw() {
     if(click == 1) {
         background(255)
         
-        for (i = 0; i < cells.length; i++) {
+        for (let i = 0; i < cells.length; i++) {
             cells[i].moveShake()
             cells[i].moveCell()        
         }
     }
 }
 
-function mouseClicked() {
-    if(mouseX >= 135 && mouseX <= 165 && mouseY >= 135 && mouseY <= 165 && click == 0) {
-        click = 1
-    } else if(mouseX >= 135 && mouseX <= 165 && mouseY >= 135 && mouseY <= 165 && click == 2) {
-        cells.splice(0, cells.length)
-        click = 0
-        this.setup()
-    }
-}
+window.addEventListener("load", () => {
+    document.querySelector(".p5Canvas").addEventListener('click', () => {
+        // if(click == 1) {
+        //     click = 3
+        //     while(click == 3) {
+        //         console.log("entrando aqui")
+        //         console.log("click: " + click)
+        //         document.querySelector(".p5Canvas").addEventListener("click", () => click = 0)
+        //     }
+        // }
+
+        if(click == 0) {
+            click = 1
+        } else if(click == 2) {
+            cells.splice(0, cells.length)
+            click = 0
+            this.setup()
+        }
+    })
+})
+
 
 class Cell {
     constructor(x, y, wh, v, time_r, time_d) {
@@ -114,16 +124,16 @@ class Cell {
     }
 
     distanceX() {
-        for(var it = 0; it < 30; it++) {
-            var distX = this.x + random(it, -it)
+        for(let it = 0; it < 30; it++) {
+            let distX = this.x + random(it, -it)
             this.updateMove()
             return distX
         }
     }
 
     distanceY() {
-        for(var it = 0; it < 30; it++) {
-            var distY = this.y + random(it, -it)
+        for(let it = 0; it < 30; it++) {
+            let distY = this.y + random(it, -it)
             this.updateMove()
             return distY
         }
@@ -140,7 +150,6 @@ class Cell {
                 this.death()
             }
         } else {
-            console.log("Máximo de células: " + cells.length)
             click = 2
         }
     }

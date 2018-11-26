@@ -22,18 +22,24 @@ main {
 	height: 100%
 }
 
-div.titulo {
-	flex-grow: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 h1 {
 	font-size: 1em;
 	font-weight: 700;
 	text-align: center;
-	padding-bottom: 5vh;
+}
+
+a.start {
+	color: black;
+	text-decoration: none;
+	font-size: .7em;
+	padding: .3vh .6vw;
+	border: solid black .3vmin;
+	border-radius: .4vw;
+}
+
+a.start:hover {
+	background-color: #383838;
+	color: white;
 }
 
 section {
@@ -42,23 +48,28 @@ section {
 	justify-content: space-evenly;
 	align-items: center;
 	width: 100vw;
-	height: 80vh;
+	height: 75%;
 	padding: 0
 }
 
-div.conteudo {
+.previous-page, .next-page {
+	font-weight: normal;
+	font-size: .8em;
+}
+
+div.content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: stretch;
+	justify-content: flex-start;
 	height: 90%;
 	width: 55%;
 }
 
-p.texto {
+p.text {
 	width: 75%;
-	height: 20%;
 	color: black;
+	padding: 1vh;
 	text-align: justify;
 	word-wrap: normal;
 	font-size: 2.6vmin;
@@ -70,30 +81,15 @@ div.animation {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 35vw;
-	height: 50vh;
+	width: 35%;
+	height: 70%;
 }
 
-a.iniciar {
-	color: black;
-	text-decoration: none;
-	font-size: .7em;
-	padding: .3vh .6vw;
-	border: solid black .3vmin;
-	border-radius: .4vw;
-}
-
-a.iniciar:hover {
-	background-color: #383838;
-	color: white;
-}
-
-i {
-	font-style: none;
+span {
 	font-weight: bold;
 }
 
-.sidecard, .navbar, .conceito {
+.sidecard, .navbar, .concept {
 	background-color: white;
 }
 
@@ -140,7 +136,7 @@ div.close-sidecard {
 	width: 20%
 }
 
-p.conceito {
+p.concept {
 	font-size: 2.6vmin;
 	font-weight: normal;
 	text-align: justify;
@@ -189,18 +185,22 @@ div.popup {
 }
 
 @media (max-aspect-ratio: 1/1){
-	div.conteudo {
+	section {
 		flex-direction: column;
+	}
+
+	div.content {
+		flex-direction: row;
 		height: 100%;
 	}
 
-	p.texto {
+	p.text {
 		font-size: 2.8vmin;
 	}
 	
 	div.animation {
-		width: 45vw;
-		height: 40vh
+		width: 55%;
+		height: 65%;
 	}
 	
 	div.sidecard {

@@ -1,6 +1,14 @@
+- Colocar os textos na página;
+
+- Pesquisar mais sobre o MediaDevices.ondevicechange = ...
+
+- Padronizar e melhorar o estilo
+
+- Tentar fazer as transições de páginas
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 INTRODUÇÃO:
-
-
 
 
 
@@ -21,9 +29,9 @@ INTERAÇÕES ECOLÓGICAS:
 
 Os indivíduos dentro de um ecossistema vivem interagindo entre si através de um sistema chamado consumidor-recurso, 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-CONCEITOS:
+=> CONCEITOS:
 Ecologia - É a área da Biologia que estuda a interação dos seres vivos entre si e entre o meio ambiente.
 
 Ecossitema - É um sistema que abrange seres vivos e o ambiente, mostrando suas interações relações.
