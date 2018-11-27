@@ -30,15 +30,6 @@ function draw() {
 
 window.addEventListener("load", () => {
     document.querySelector(".p5Canvas").addEventListener('click', () => {
-        // if(click == 1) {
-        //     click = 3
-        //     while(click == 3) {
-        //         console.log("entrando aqui")
-        //         console.log("click: " + click)
-        //         document.querySelector(".p5Canvas").addEventListener("click", () => click = 0)
-        //     }
-        // }
-
         if(click == 0) {
             click = 1
         } else if(click == 2) {

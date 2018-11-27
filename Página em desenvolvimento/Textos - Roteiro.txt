@@ -10,28 +10,43 @@
 
 INTRODUÇÃO:
 
-
+Neste projeto, iremos tentar explicar de maneira simples e objetiva os os conceitos e funcionamento de dinâmica populacional e interações ecológicas. Com o auxílio de gráficos interativos para exemplificar os conteúdos, esperamos que você leitor consiga compreender o que estamos ensinando.
 
 
 DINÂMICA DE POPULAÇÕES & CRESCIMENTO POPULACIONAL:
 
+	(Explica assuntos da dinâmica)
 
 	O crescimento populacional faz parte do estudo de dinâmica de populações, em que é realizado uma análise de uma população em um ecossistema levando em conta a quantidade de indivíduos dessa população sobre o tempo.
 
 	Para representar graficamente o crescimento da população no ambiente, são usadas as equações de crescimento exponencial, ou crescimento em "J", e de crescimento logístico, ou crescimento em "S".
 
-	Na célula ao lado( mostra exemplo da animação da divisão celular), ao clicarmos nela, ela começará a se mover e a se reproduzir, ao mesmo tempo que as mais velhas irão morrer. Chegará um momento da animação que a mesma congelará, demonstrando que o ambiente chegou à sua capacidade de suporte limite, ou seja, o ambiente chegará ao seu limite para suportar a população.
+	Na animação ao lado( mostra exemplo da animação da divisão celular), ao clicarmos na célula, ela começará a se mover e a se reproduzir por bipartição(explicar o conceito), ao mesmo tempo que as mais velhas irão morrer. Chegará um momento da animação que a mesma congelará, demonstrando que o ambiente chegou à sua capacidade de suporte limite, ou seja, o ambiente chegará ao seu limite para suportar a população.
 
+	O crescimento exponencial representa o crescimento de uma população levando em conta apenas o tempo, ignorando os fatores de recursos necessários para a sobrevivência. A linha de resultado gerada por esse gráfico nos dá a conclusão de que a população cresceu em função do tempo com recursos abundantes no meio, mas não é bem assim que acontece no mundo real.
+
+	(Mostra gráfico como um exemplo)
+	(Explica o gráfico)
+
+	O crescimento logístico é diferente do anterior pois ele considera um fator extremamente importante para determinar o crescimento de uma população, a capacidade de carga(Explica o conceito de capacidade de carga com um sidecard). Isso é fundamental para entender a ascensão, estabilidade ou declínio de uma população através da disponibilidade de recursos no meio e na capacidade do mesmo em suportar um grande volume populacional.
+
+	(Mostra exemplo com um gráfico)
+	(Explica o gráfico)
 
 
 INTERAÇÕES ECOLÓGICAS:
 
+	Os indivíduos dentro de um ecossistema sempre estão interagindo entre si e com o meio em que vivem. Um tipo de interação realizada pelos seres vivos é a predação, englobada na interação consumidor-recurso(explicar o conceito). O conceito de flutuação populacional é presente nessa interação, pois a prática da predação regula ao mesmo tempo a população da presa e a população do predador. À medida que a população de presas cresce, a população de predadores cresce  também, pois há uma quantidade considerável de alimento. Quando a população de presa se torna baixa, há um declínio da população de predadores, visto que agora não há uma grande disponibilidade de alimento. 
 
-Os indivíduos dentro de um ecossistema vivem interagindo entre si através de um sistema chamado consumidor-recurso, 
+	(Explica a fórmula e alguns exemplos clássicos)
+	(Mostra um gráfico para exemplo)
+	(Explica o gráfico)	
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 => CONCEITOS:
-Ecologia - É a área da Biologia que estuda a interação dos seres vivos entre si e entre o meio ambiente.
+Ecologia: É a área da Biologia que estuda a interação dos seres vivos entre si e entre o meio ambiente.
 
-Ecossitema - É um sistema que abrange seres vivos e o ambiente, mostrando suas interações relações.
+Ecossitema: É um sistema que abrange seres vivos e o ambiente, mostrando suas interações e relações.
+
+Interação Cosumidor-Recurso: 

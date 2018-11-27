@@ -18,6 +18,7 @@ body {
 
 main {
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	height: 100%
 }
@@ -53,8 +54,16 @@ section {
 }
 
 .previous-page, .next-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75%;
+	width: 3vw;
 	font-weight: normal;
 	font-size: .8em;
+	text-decoration: none;
+	color: black;
+	padding: 1vh;
 }
 
 div.content {
@@ -83,6 +92,12 @@ div.animation {
 	align-items: center;
 	width: 35%;
 	height: 70%;
+}
+
+div.graphic {
+	border: solid 1px black;
+	height: 90%;
+	width: 90%;
 }
 
 span {
@@ -167,7 +182,7 @@ a.slides {
 	height: 6vmin;
 }
 
-a.slides:hover, #current{
+a.slides:hover, #current, div.sub-slides > a{
 	background-color: white;
 }
 
@@ -176,6 +191,7 @@ div.popup {
 	height: 3.5vh;
 	width: 8vw;
 	background-color: #5e5555;
+	border-radius: 10%;
 	color: #ffffff;
 	font-family: 'Lato', sans-serif;
 	font-size: .30em;
@@ -185,12 +201,9 @@ div.popup {
 }
 
 @media (max-aspect-ratio: 1/1){
-	section {
-		flex-direction: column;
-	}
-
 	div.content {
-		flex-direction: row;
+		flex-direction: column;
+		align-items: flex-start;
 		height: 100%;
 	}
 

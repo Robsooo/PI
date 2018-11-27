@@ -1,3 +1,7 @@
 const device = navigator.userAgent
 
-MediaDevices.ondevicechange = function() {console.log("Changed") }
+MediaDevices.ondevicechange = getDevice()
+
+function getDevice() {
+    console.log("Changed")
+}
