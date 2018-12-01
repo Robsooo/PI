@@ -39,7 +39,7 @@ INTERAÇÕES ECOLÓGICAS:
 	Os indivíduos dentro de um ecossistema sempre estão interagindo entre si e com o meio em que vivem. Um tipo de interação realizada pelos seres vivos é a predação, englobada na interação consumidor-recurso(explicar o conceito). O conceito de flutuação populacional é presente nessa interação, pois a prática da predação regula ao mesmo tempo a população da presa e a população do predador. À medida que a população de presas cresce, a população de predadores cresce  também, pois há uma quantidade considerável de alimento. Quando a população de presa se torna baixa, há um declínio da população de predadores, visto que agora não há uma grande disponibilidade de alimento. 
 
 	(Explica a fórmula e alguns exemplos clássicos)
-	(Mostra um gráfico para exemplo)
+K	(Mostra um gráfico para exemplo)
 	(Explica o gráfico)	
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
