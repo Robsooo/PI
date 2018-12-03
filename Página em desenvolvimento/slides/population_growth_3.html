@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CRESCIMENTO LOGÍSTICO</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="..//css/main.css"/>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CRESCIMENTO LOGÍSTICO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="..//css/main.css"/>
+       
+        <style>
+            .content { width: 70%; height: 90%}
+            p.text { width: 80%; }
+        </style>
+
+        <script defer src="..//js/main.js"></script>
+        <script defer src="..//js/sidecard.js"></script>
+        <script src="..//js/p5.min.js"></script>
+        <script src="..//js/cell_division_melhor.js"></script>
 </head>
 <body>
     <main>
@@ -17,9 +27,23 @@
             <a class="previous-page" href="population_growth_2.html"> < </a>
             <div class="content">
                 <p class="text">
+                    Para mostrar a atuação de fatores limitantes de população estudamos o <span>
+                    crescimento logístico</span>, que tem seu resultado influenciado por esses
+                    fatores. Sua principal diferença para o crescimento exponencial é, além da linha
+                    em "S"
+                </p>
 
+                <p class="text">
+                    Ao clicarmos na célula ao lado, ela começará a se mover e a se reproduzir, ao 
+                    mesmo tempo que as mais velhas irão morrer. Chegará um momento da animação que a 
+                    mesma congelará, demonstrando que o ambiente chegou à sua capacidade de suporte 
+                    limite, ou seja, o ambiente chegará ao seu limite para suportar a população, 
+                    definido para um máximo de 100 células.
                 </p>
             </div>
+
+            <div class="animation"></div>
+            <a class="next-page" href="population_growth_4.html"> > </a>
         </section>
         
         <div class="sidecard">
@@ -27,23 +51,18 @@
                 <div class="top-sidecard"></div>
                 <div class="close-sidecard">×</div>
             </div>
-            <p class="concept"></p>
+            <p class="concept">
+                Fórmula Usada: k / (1 + Math.exp(a-r*t))
+            </p>
         </div>
     </main>
 
     <footer>
-        <div class="popup"></div>
-        <a class="slides" href="../index.html"></a>
-        <div class="popup"></div>
+        <a class="slides" href="..//index.html"></a>
         <a class="slides" href="introduction.html"></a>
-        <div class="popup"></div>
         <a class="slides" href="population_dynamics.html"></a>
-        <div class="popup"></div>   
         <a class="slides" id="current" href="population_growth.html"></a>
-        <div class="popup"></div>
         <a class="slides" href="ecological_interation.html"></a>
-
-        <script src="..//js/main.js"></script>
     </footer>
 </body>
 </html>

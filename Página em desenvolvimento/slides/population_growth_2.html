@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CRESCIMENTO EXPONENCIAL</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="..//css/main.css"/>
-        <style>
-            @media (max-aspect-ratio: 1/1){
-                div.content { flex-direction: column }
-            }
-        </style>
-        
-        <script src="..//js/main.js"></script>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CRESCIMENTO EXPONENCIAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="..//css/main.css"/>
+
+    <style>
+        .content { width: 70%; height: 90%}
+        p.text { width: 80%; }
+    </style>
+
+    <script defer src="..//js/main.js"></script>
+    <script defer src="..//js/sidecard.js"></script>
+    <script src="..//js/p5.min.js"></script>
+    <script defer src="..//graphics/grafico.js"></script>
+    <script src="..//graphics/regressionFunction.js"></script>
+    <script defer src="..//graphics/sliderFunction.js"></script>
+    <script defer src="..//graphics/sketch.js"></script>
 </head>
 
-<!-- Dar um jeito de arrumar o @media query para colocar  o div.content, pois a questão do flex-direction ser row deixa o style
-muito merda, e eu vou ter que dar um jeito de identificar se o dispositivo é mobile ou não, para juntar todos os paragráfos-->
+<!-- Dar um jeito de arrumar o @media query para colocar  o div.content, pois a questão do 
+    flex-direction ser row deixa o style muito merda, e eu vou ter que dar um jeito de identificar se
+     o dispositivo é mobile ou não, para juntar todos os paragráfos-->
 
 <body>
     <main>
@@ -28,16 +35,29 @@ muito merda, e eu vou ter que dar um jeito de identificar se o dispositivo é mo
             <a class="previous-page" href="population_growth.html"> < </a>
             <div class="content">
                 <p class="text">
-                    O crescimento exponencial representa o crescimento de uma população levando em conta apenas o tempo, ignorando 
-                    os fatores de recursos necessários para a sobrevivência.
+                    O <span>crescimento exponencial</span> representa o crescimento de uma população levando em 
+                    conta apenas o tempo, ignorando os fatores de recursos necessários para a 
+                    sobrevivência.
                 </p>
 
-                <p class="text">A linha de resultado gerada por esse gráfico nos dá a conclusão de que a população cresceu em função
-                    do tempo com recursos abundantes no meio, mas não é bem assim que acontece no mundo real.
+                <p class="text">
+
+                </p>
+
+                <p class="text">
+                    Vamos imaginar uma população com 25 indivíduos iniciais e com uma taxa de
+                    crescimento exponencial de 5. 
+                </p>
+                
+                <p class="text">
+                    Ao executarmos o gráfico, perceberemos que a linha de resultado gerada por esse 
+                    gráfico nos dá a conclusão de que a população cresceu muito em função do tempo com
+                    recursos abundantes no meio, até ser barrada pela capacidade máxima de suporte do
+                    ambiente, mas não é bem assim que acontece no mundo real.
                 </p>
             </div>
 
-            <iframe src="..//graphics/index.html" class="graphic"></iframe>
+            <div class="graphic"></div>
             <a class="next-page" href="population_growth_3.html"> > </a>
         </section>
 
@@ -46,20 +66,17 @@ muito merda, e eu vou ter que dar um jeito de identificar se o dispositivo é mo
                 <div class="top-sidecard"></div>
                 <div class="close-sidecard">×</div>
             </div>
-            <p class="concept"></p>
+            <p class="concept">
+                Fórmula Usada: N(t) = N(0) * e^(r*t)
+            </p>
         </div>
     </main>
 
     <footer>
-        <div class="popup"></div>
         <a class="slides" href="../index.html"></a>
-        <div class="popup"></div>
         <a class="slides" href="introduction.html"></a>
-        <div class="popup"></div>
         <a class="slides" href="population_dynamics.html"></a>
-        <div class="popup"></div>   
         <a class="slides" id="current" href="population_growth.html"></a>
-        <div class="popup"></div>
         <a class="slides" href="ecological_interation.html"></a>
     </footer>
 </body>

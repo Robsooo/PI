@@ -15,6 +15,8 @@ body {
 	height: 100vh;
 	font-size: 8vmin;
 	font-family: 'Lato', sans-serif;
+	overflow: hidden;
+	position: fixed;
 }
 
 main {
@@ -22,8 +24,7 @@ main {
 	align-items: center;
 	flex-direction: column;
 	height: 100%;
-	overflow: hidden;
-	transition:2s ease-out;
+	transition:2.5s ease-out;
 }
 
 h1 {
@@ -49,7 +50,7 @@ a.start:hover {
 section {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	width: 100vw;
 	height: 75%;
@@ -60,14 +61,21 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 75%;
 	width: 3vw;
 	cursor: pointer;
 	font-weight: normal;
-	font-size: .8em;
+	font-size: .72em;
 	text-decoration: none;
 	color: black;
 	padding: 1vh;
+}
+
+.previous-page {
+	left: 2;
+}
+
+.next-page {
+	right: 2;
 }
 
 div.content {
@@ -76,11 +84,11 @@ div.content {
 	align-items: center;
 	justify-content: flex-start;
 	height: 90%;
-	width: 55%;
+	width: 65%;
 }
 
 p.text {
-	width: 75%;
+	width: 100%;
 	color: black;
 	padding: 1vh;
 	text-align: justify;
@@ -98,11 +106,71 @@ div.animation {
 	height: 70%;
 }
 
-iframe.graphic {
-	border: solid 1px black;
-	height: 90%;
-	width: 90%;
+
+/* Começo do CSS dos gráficos*/
+ 
+.sliders-superior{
+	background-color: #fafafa;
+	width: 80vw
 }
+
+.sliders-container{
+	margin-bottom: 1em
+}
+p.legenda{
+	margin-top: 0;
+	margin-bottom: 1em;
+	font-size: 2.2vh;
+	color: #ffffff;
+	background-color: #222222;
+	padding: 0.3em 0 0.3em 0.5em
+}
+.graph-container{
+	display: flex;
+}
+.button-container{
+	background-color: black;
+	border-radius: 0 0 15px 0;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	padding: 0.2em 0.5em 0.2em 0;
+	align-items: center
+}
+button{
+	border-radius: 10%;
+	font-size: 2.2vh;
+	border: none;
+	text-decoration: none;
+	background-color: white;
+	height: 2em;
+	color: black;
+	margin: 0 1vh 0 1vh
+}
+input.slider{
+	background-color: transparent;
+	width: 90%
+}
+input.slider::-moz-range-thumb {
+	background-color: black;
+	border: none;
+	height: 2.5vh;
+	width: 2.5vh;
+	border-radius: 100%
+}
+input.slider::-moz-range-track{
+	background-color: #aaaaaa;
+	height: 0.5vh;
+}
+
+div.graphic{
+	width: 50%;
+	height: 80%;
+	flex-direction: row
+}
+
+/* Fim do CSS dos gráficos*/
+
 
 span {
 	font-weight: bold;
@@ -113,6 +181,8 @@ span {
 }
 
 div.sidecard {
+	display: flex;
+	flex-direction: column;
 	position: fixed;
 	left: 0;
 	bottom: -30vh;
@@ -205,18 +275,30 @@ div.popup {
 }
 
 @media (max-aspect-ratio: 1/1){
+	h1 {
+		font-size: .8em;
+		padding-bottom: 3vh;
+	}
+	
 	div.content {
 		flex-direction: column;
-		align-items: flex-start;
 		height: 100%;
+		width: 80%;
+	}
+
+	div.section {
+		flex-direction: column;
+		align-items: flex-start;
+		height: 75vh;
 	}
 
 	p.text {
 		font-size: 2.8vmin;
+		width: 100%;
 	}
 	
 	div.animation {
-		width: 55%;
+		width: 85%;
 		height: 65%;
 	}
 	

@@ -1,6 +1,13 @@
 const a = document.querySelectorAll("a.slides")
-const popup = document.querySelectorAll("div.popup")
+const footer = document.querySelector("footer") 
 
+
+for (let index = 0; index < a.length; index++) {
+    var popup = document.createElement("div")
+    popup.className = "popup"
+    footer.insertBefore(popup, a[index])
+}
+popup = document.querySelectorAll("div.popup")
 
 for(let i = 0; i < popup.length; i++) {
     if(i == 0) {
@@ -16,7 +23,7 @@ for(let i = 0; i < popup.length; i++) {
     }
     
     resizePopup(i)
-
+    
     a[i].addEventListener('mouseover', ev => {
         popup[i].style.display = 'block'
         ev.target.style.top = '1vh'
