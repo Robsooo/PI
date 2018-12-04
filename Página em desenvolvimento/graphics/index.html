@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <title>Grafeco</title>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script> -->
     <script src="p5.min.js"></script>
+    <script src='function.js'></script>
     <script src="regressionFunction.js"></script>
     <script src="sliderFunction.js"></script>
     <script src="grafico.js"></script>
@@ -66,14 +68,14 @@
             background-color: transparent;
             width: 90%
         }
-        input.slider::-moz-range-thumb {
+        input.slider::-webkit-range-thumb {
             background-color: black;
             border: none;
             height: 2.5vh;
             width: 2.5vh;
             border-radius: 100%
         }
-        input.slider::-moz-range-track{
+        input.slider::-webkit-range-track{
             background-color: #aaaaaa;
             height: 0.5vh;
         }
@@ -91,4 +93,3 @@
     <script src="sketch.js"></script>
 </body>
 </html>
-x   

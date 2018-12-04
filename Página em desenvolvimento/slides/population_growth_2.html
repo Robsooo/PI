@@ -1,83 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CRESCIMENTO EXPONENCIAL</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="..//css/main.css"/>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LOGISTIC GROWTH</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="..//css/main.css"/>
+       
+        <style>
+            .content { width: 50%; height: 90%}
+            p.text { width: 70%; }
+        </style>
 
-    <style>
-        .content { width: 70%; height: 90%}
-        p.text { width: 80%; }
-    </style>
-
-    <script defer src="..//js/main.js"></script>
-    <script defer src="..//js/sidecard.js"></script>
-    <script src="..//js/p5.min.js"></script>
-    <script defer src="..//graphics/grafico.js"></script>
-    <script src="..//graphics/regressionFunction.js"></script>
-    <script defer src="..//graphics/sliderFunction.js"></script>
-    <script defer src="..//graphics/sketch.js"></script>
+        <script defer src="..//js/main.js"></script>
+        <script defer src="..//js/sidecard.js"></script>
+        <script src="..//js/p5.min.js"></script>
+        <script src="..//js/cell_division.js"></script>
 </head>
-
-<!-- Dar um jeito de arrumar o @media query para colocar  o div.content, pois a questão do 
-    flex-direction ser row deixa o style muito merda, e eu vou ter que dar um jeito de identificar se
-     o dispositivo é mobile ou não, para juntar todos os paragráfos-->
-
 <body>
     <main>
         <h1>
-            Crescimento Exponencial
+            Crescimento Logístico
         </h1>
-        
+
         <section>
             <a class="previous-page" href="population_growth.html"> < </a>
             <div class="content">
                 <p class="text">
-                    O <span>crescimento exponencial</span> representa o crescimento de uma população levando em 
-                    conta apenas o tempo, ignorando os fatores de recursos necessários para a 
-                    sobrevivência.
+                    Para mostrar a atuação de fatores limitantes de população estudamos o <span>
+                    crescimento logístico</span>, que tem seu resultado influenciado por esses
+                    fatores. Sua principal diferença para o crescimento exponencial é, além da linha
+                    em "S", a abordagem desses fatores externos.
                 </p>
 
                 <p class="text">
-
-                </p>
-
-                <p class="text">
-                    Vamos imaginar uma população com 25 indivíduos iniciais e com uma taxa de
-                    crescimento exponencial de 5. 
-                </p>
-                
-                <p class="text">
-                    Ao executarmos o gráfico, perceberemos que a linha de resultado gerada por esse 
-                    gráfico nos dá a conclusão de que a população cresceu muito em função do tempo com
-                    recursos abundantes no meio, até ser barrada pela capacidade máxima de suporte do
-                    ambiente, mas não é bem assim que acontece no mundo real.
+                    Ao clicarmos na célula ao lado, ela começará a se mover e a se reproduzir, ao 
+                    mesmo tempo que as mais velhas irão morrer. Chegará um momento da animação que a 
+                    mesma congelará, demonstrando que o ambiente chegou à sua capacidade de suporte 
+                    limite, ou seja, o ambiente chegará ao seu limite para suportar a população, 
+                    definido para um máximo de 100 células.
                 </p>
             </div>
 
-            <div class="graphic"></div>
+            <div class="animation"></div>
             <a class="next-page" href="population_growth_3.html"> > </a>
         </section>
-
+        
         <div class="sidecard">
             <div class="navbar">
                 <div class="top-sidecard"></div>
                 <div class="close-sidecard">×</div>
             </div>
             <p class="concept">
-                Fórmula Usada: N(t) = N(0) * e^(r*t)
+                Fórmula Usada: k / (1 + Math.exp(a-r*t))
             </p>
         </div>
     </main>
 
     <footer>
-        <a class="slides" href="../index.html"></a>
+        <a class="slides" href="..//index.html"></a>
         <a class="slides" href="introduction.html"></a>
         <a class="slides" href="population_dynamics.html"></a>
         <a class="slides" id="current" href="population_growth.html"></a>
         <a class="slides" href="ecological_interation.html"></a>
+        <a class="slides" href="credits.html"></a>
     </footer>
 </body>
 </html>

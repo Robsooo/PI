@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CRESCIMENTO LOGÍSTICO</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="..//css/main.css"/>
-       
-        <style>
-            .content { width: 70%; height: 90%}
-            p.text { width: 80%; }
-        </style>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LOGISTIC GROWTH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="..//css/main.css"/>
+    
+    <style>
+        section { justify-content: space-around }
+        div.content { width: 70%; height: 90%}
+        p.text { width: 80%; }
+    </style>
 
-        <script defer src="..//js/main.js"></script>
-        <script defer src="..//js/sidecard.js"></script>
-        <script src="..//js/p5.min.js"></script>
-        <script src="..//js/cell_division_melhor.js"></script>
+    <script defer src="..//js/main.js"></script>
+    <script src="..//js/p5.min.js"></script>
+    <script defer src="..//graphics/grafico.js"></script>
+    <script src="..//graphics/regressionFunction.js"></script>
+    <script defer src="..//graphics/sliderFunction.js"></script>
+    <script defer src="..//graphics/sketch.js"></script>
 </head>
+
 <body>
     <main>
         <h1>
@@ -27,34 +31,26 @@
             <a class="previous-page" href="population_growth_2.html"> < </a>
             <div class="content">
                 <p class="text">
-                    Para mostrar a atuação de fatores limitantes de população estudamos o <span>
-                    crescimento logístico</span>, que tem seu resultado influenciado por esses
-                    fatores. Sua principal diferença para o crescimento exponencial é, além da linha
-                    em "S"
+                    O característico formato em "S" formado por esse gráfico nos diz muitas coisas
+                    importantes sobre a população analisada. O nível da linha é dividido em três 
+                    etapas, que são a inicial: representada por um baixo aumento populacional,
+                    intermediária: rápida e significativa ascensão populacional, e final: representando
+                    o alcance da capacidade máxima de suporte do meio e equilíbro constante dessa
+                    população.
                 </p>
 
                 <p class="text">
-                    Ao clicarmos na célula ao lado, ela começará a se mover e a se reproduzir, ao 
-                    mesmo tempo que as mais velhas irão morrer. Chegará um momento da animação que a 
-                    mesma congelará, demonstrando que o ambiente chegou à sua capacidade de suporte 
-                    limite, ou seja, o ambiente chegará ao seu limite para suportar a população, 
-                    definido para um máximo de 100 células.
+                    Vamos levar em conta uma população composta de coelhos, que são animais com alta
+                    taxa reprodutiva. Na etapa inicial, há um lento crescimento na população, mas
+                    na intermediária há um grande aumento devido ao crescimento populacional, que
+                    aumenta o número de indivíduos e assim há mais reprodutores em potencial com o 
+                    passar do tempo. Já no final há uma estabilização populacional, ocasionada seja
+                    pela falta de recursos, seja pelo território superpopulado.
                 </p>
             </div>
-
-            <div class="animation"></div>
-            <a class="next-page" href="population_growth_4.html"> > </a>
+                
+            <div class="graphic"></div>
         </section>
-        
-        <div class="sidecard">
-            <div class="navbar">
-                <div class="top-sidecard"></div>
-                <div class="close-sidecard">×</div>
-            </div>
-            <p class="concept">
-                Fórmula Usada: k / (1 + Math.exp(a-r*t))
-            </p>
-        </div>
     </main>
 
     <footer>
@@ -63,6 +59,7 @@
         <a class="slides" href="population_dynamics.html"></a>
         <a class="slides" id="current" href="population_growth.html"></a>
         <a class="slides" href="ecological_interation.html"></a>
+        <a class="slides" href="credits.html"></a>
     </footer>
 </body>
 </html>

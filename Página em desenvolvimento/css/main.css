@@ -13,6 +13,7 @@ body {
 	display: flex;
 	background-color: white;
 	height: 100vh;
+	width: 100vw;
 	font-size: 8vmin;
 	font-family: 'Lato', sans-serif;
 	overflow: hidden;
@@ -24,7 +25,7 @@ main {
 	align-items: center;
 	flex-direction: column;
 	height: 100%;
-	transition:2.5s ease-out;
+	width: 100%;
 }
 
 h1 {
@@ -50,7 +51,7 @@ a.start:hover {
 section {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	width: 100vw;
 	height: 75%;
@@ -88,7 +89,7 @@ div.content {
 }
 
 p.text {
-	width: 100%;
+	width: 70%;
 	color: black;
 	padding: 1vh;
 	text-align: justify;
@@ -109,18 +110,23 @@ div.animation {
 
 /* Começo do CSS dos gráficos*/
  
-.sliders-superior{
+.sliders-superior {
 	background-color: #fafafa;
 	width: 80vw
 }
 
-.sliders-container{
-	margin-bottom: 1em
+@font-face{
+	font-family: "Roboto";
+	src: local("Roboto/Roboto-Black.ttf") format("ttf")
 }
+.sliders-container{
+	margin-bottom: 1em;
+}
+
 p.legenda{
 	margin-top: 0;
 	margin-bottom: 1em;
-	font-size: 2.2vh;
+	font-size: 1.8vh;
 	color: #ffffff;
 	background-color: #222222;
 	padding: 0.3em 0 0.3em 0.5em
@@ -128,7 +134,8 @@ p.legenda{
 .graph-container{
 	display: flex;
 }
-.button-container{
+
+.button-container {
 	background-color: black;
 	border-radius: 0 0 15px 0;
 	height: 10vh;
@@ -137,7 +144,8 @@ p.legenda{
 	padding: 0.2em 0.5em 0.2em 0;
 	align-items: center
 }
-button{
+
+button {
 	border-radius: 10%;
 	font-size: 2.2vh;
 	border: none;
@@ -149,23 +157,23 @@ button{
 }
 input.slider{
 	background-color: transparent;
-	width: 90%
+	width: 70%
 }
-input.slider::-moz-range-thumb {
+input.slider::-webkit-range-thumb {
 	background-color: black;
 	border: none;
 	height: 2.5vh;
 	width: 2.5vh;
 	border-radius: 100%
 }
-input.slider::-moz-range-track{
+input.slider::-webkit-range-track{
 	background-color: #aaaaaa;
 	height: 0.5vh;
 }
 
 div.graphic{
 	width: 50%;
-	height: 80%;
+	height: 90%;
 	flex-direction: row
 }
 
@@ -283,18 +291,18 @@ div.popup {
 	div.content {
 		flex-direction: column;
 		height: 100%;
-		width: 80%;
+		width: 60%;
 	}
 
 	div.section {
-		flex-direction: column;
+		justify-content: space-around;
 		align-items: flex-start;
 		height: 75vh;
 	}
 
 	p.text {
 		font-size: 2.8vmin;
-		width: 100%;
+		width: 80%;
 	}
 	
 	div.animation {
@@ -304,6 +312,14 @@ div.popup {
 	
 	div.sidecard {
 		width: 50vw;
+	}
+
+	div.top-sidecard {
+		font-size: .34em;
+	}
+
+	p.concept {
+		font-size: .4em;
 	}
 	
 	a.slides {

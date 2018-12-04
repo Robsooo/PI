@@ -1,6 +1,16 @@
 const a = document.querySelectorAll("a.slides")
 const footer = document.querySelector("footer") 
+// const main = document.querySelectorAll("main")
+// const section = document.querySelectorAll("section")
 
+// var t = []
+
+// import { Transition } from "transition.js";
+
+// for(let i = 0; i < main.length; i++) {
+//     t[i] = new Transition(main[i])
+//     console.log(t[i])
+// }
 
 for (let index = 0; index < a.length; index++) {
     var popup = document.createElement("div")
@@ -20,6 +30,8 @@ for(let i = 0; i < popup.length; i++) {
         popup[i].innerText = 'Crescimento Populacional'
     } else if(i == 4) {
         popup[i].innerText = 'Interações Ecológicas'
+    } else if(i == 5) {
+        popup[i].innerText = 'Créditos'
     }
     
     resizePopup(i)
